@@ -1,9 +1,10 @@
 # Region-under-discussion-for-visual-dialog
 
 You should have available three things on the root directory for this repository:
-1. QCS: directory with QCS code
-2. CMO: directory with CMO code
-3. REAMDE.md: this file.
+1. QCS: directory with QCS code.
+2. CMO: directory with CMO code.
+3. GWHist.csv: an annotated subset of history dependent questions.
+4. REAMDE.md: this file.
 
 In order to run these experiments you need the following data and features:
 
@@ -72,3 +73,14 @@ where:
 python3 -W ignore trainval.py --guesswhat-root=guesswhat_with_focus_final --max-length=32 --batch-size=32 --epochs=5 --coco-data-root=data --oracle-targets-root=resnet152 --focus-mode=none --num-threads=4 --num-workers=2 --suffix=butd-resnet152 --marker=none
 ```
 were focus-mode can be either none, relative, restriction, zeros and random.
+
+## GWHist
+
+The challenging subset of the GuessWhat?! test set is also available here.
+The csv file contains the following data:
+
+- Game ID: Game ID of a given question.
+- Position: Position in the dialog, ranging from 0 for the first turn up to the lenght of the dialog -1.
+- Question: The history dependent question.
+
+Game ID and Position univocaly identify a question, so it can be aligned with the rest of the data from the dataset.
