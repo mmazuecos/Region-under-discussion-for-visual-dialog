@@ -1,0 +1,13 @@
+*.pyc
+__pycache__
+*~
+~*
+COCO
+guesswhat
+guesswhat_with_focus
+py-bottom-up-attention
+cache
+fasterrcnn
+data
+*.log
+transformers

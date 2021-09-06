@@ -76,11 +76,10 @@ were focus-mode can be either none, relative, restriction, zeros and random.
 
 ## GWHist
 
-The challenging subset of the GuessWhat?! test set is also available here.
+Subset of history dependent questions of GuessWhat?!
 The csv file contains the following data:
 
-- Game ID: Game ID of a given question.
-- Position: Position in the dialog, ranging from 0 for the first turn up to the lenght of the dialog -1.
-- Question: The history dependent question.
+- question\_id: The unique identifier for the given question in the GuessWhat?! dataset.
+- game\_id: Game ID of a given question.
+- question: The history dependent question.
 
-Game ID and Position univocaly identify a question, so it can be aligned with the rest of the data from the dataset.

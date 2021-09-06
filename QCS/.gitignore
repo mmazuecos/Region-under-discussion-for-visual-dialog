@@ -1,0 +1,17 @@
+*json
+*txt
+*gz
+*err
+*out
+*csv
+*h5
+*png
+*jpg
+*pyc
+bin/Oracle/*
+bin/SL/*
+bin/CL/*
+!bin/Oracle/README.md
+!bin/CL/README.md
+!bin/SL/README.md
+
